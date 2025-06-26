@@ -42,7 +42,8 @@ const Login = ({setIsLoggedIn}) => {
                 alert(data.error || 'Registration Failed')
             }
         }catch(error){
-            alert('No Network connection. please check your connection', error)
+            alert(error)
+            console.log('error', error)
         }
     };
 
