@@ -1,0 +1,160 @@
+
+.dashboardContainer{
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    background-color: aquamarine;
+    border: 4px solid black;
+    border-image: linear-gradient(to right, rgb(255, 0, 238), rgb(255, 0, 0)) 1;
+}
+
+.leftPart{
+    width: 40%;
+    text-align: center;
+    padding: 13px;
+    box-shadow: 5px 0px 5px black;
+    border-radius: 7px;
+}
+
+.layoutDept{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 57px;
+}
+
+.layoutDept h1{
+    border-bottom: 3px solid black;
+}
+
+.layoutDept input{
+    width: 250px;
+    height: 31px;
+    border-radius: 7px;
+    border: 2px solid black;
+    align-self: center;
+    font-size: 1rem;
+}
+
+.layoutDept button{
+    width: 250px;
+    align-self: center;
+    height: 31px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: rgb(71, 237, 71);
+    font-size: 1rem;
+    margin-top: 17px;
+}
+
+
+/* right part */
+
+.rightPart{
+    padding: 37px;
+    margin: 0 auto;
+}
+
+
+.deptTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.deptTable th,
+.deptTable td {
+  border-bottom: 2px solid #fd0000;
+  padding: 13px;
+  text-align: left;
+}
+
+.deptTable th {
+  background-color: #f5a6a6;
+  font-size: 1rem;
+}
+
+.edit {
+    cursor: pointer;
+    background-color: yellow;
+    margin-right: 7px;
+    padding: 11px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 3px 3px 3px black;
+}
+
+.delete{
+    cursor: pointer;
+    background-color: red;
+    margin-right: 7px;
+    padding: 11px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 3px 3px 3px black;
+}
+
+.deptTable button:hover {
+  background-color: #ddd;
+}
+
+
+/* update */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal {
+  background: radial-gradient(ellipse at top left, rgb(201, 239, 246), rgb(240, 250, 191));
+  padding: 20px;
+  border: 2px solid black;
+  border-image: linear-gradient(to right, rgb(255, 0, 238), rgb(255, 2, 2)) 1;
+  min-width: 300px;
+  box-shadow: 0 0 10px #000;
+  z-index: 101;
+
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  text-align: center;
+}
+
+.modal h2{
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+
+.modal input{
+    height: 27px;
+    border-radius: 7px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+.modal .updateBtn{
+    background-color: yellow;
+    height: 27px;
+    border-radius: 7px;
+    font-size: 1rem;
+    box-shadow: 0px 0px 5px black;
+}
+
+.modal .cancelBtn{
+    background-color: rgb(146, 146, 145);
+    height: 27px;
+    border-radius: 7px;
+    font-size: 1rem;
+    box-shadow: 0px 0px 5px black;
+}
