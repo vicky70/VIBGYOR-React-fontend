@@ -29,6 +29,8 @@ const Login = ({setIsLoggedIn}) => {
                 }),
             });
 
+            alert('Processing...')
+
             const data = await response.json()
 
             if(response.ok){
